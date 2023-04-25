@@ -1,0 +1,1 @@
+// Смотри CodeMu part1-2 extra - ArrayOperations или https://metanit.com/web/javascript/5.7.php

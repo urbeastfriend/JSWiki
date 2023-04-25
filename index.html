@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Учу javascript</title>
+    <!-- #region styles -->
+    <style>
+        /* 
+         # in css means ID and can be applied to one element per page
+         . in css means class and can be applied to many elements
+         no identifier means style applied to an element type
+         */
+        .purpleStyle {
+            color: purple;
+            font-family: Verdana;
+        }
+
+        .pContainer {
+            font-size: 20px;
+        }
+
+        #rect {
+            width: 70px;
+            height: 70px;
+            background: green;
+            border: 3px solid silver;
+        }
+
+        #rect2 {
+            width: 70px;
+            height: 70px;
+            background: red;
+            border: 3px solid silver;
+        }
+
+        #rect3 {
+            width: 70px;
+            height: 70px;
+            background-color: blue;
+        }
+
+        #rect4 {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+
+        #rect5 {
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+        }
+
+        #rect6 {
+            width: 50px;
+            height: 50px;
+            background-color: hotpink;
+        }
+
+        my-html-element {
+            font-size: 20px;
+            font-style: Verdana;
+        }
+
+        .parent {
+
+            width: fit-content;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+
+    <!-- #endregion -->
+</head>
+
+<body>
+    <div class="annotation">
+        <p>Кубики с восходящими событиями</p>
+    </div>
+
+    <div id="rect3">
+        <div id="rect4"></div>
+    </div>
+
+    <p>Кубики, меняющие цвет при клике</p>
+
+    <div class="parent" style="margin-top: 15px;">
+        <!-- Встроенное событие bad practice -->
+        <div id="rect" onclick="onRectangleClick(this)"></div>
+        <div style="width: 20px;"></div>
+
+        <div id="rect2"></div>
+    </div>
+
+    <p>Кубик, меняющий цвет при наведении курсора</p>
+    <div id="rect5" style="margin-top: 15px;"></div>
+
+    <p>Кубик, управляемый wasd</p>
+    <div id="rect6" style="margin-top: 20px;"></div>
+
+    <br>
+    <my-html-element id="myElementId" myHtmlElementColor="orange"></my-html-element>
+    <br>
+
+    <img src="images/back.jpg" alt="Картинка 1" style="margin-top: 10px;" />
+
+    <div class="pContainer" style="color: red;">
+        <a href="article.html">Ссылка в никуда</a>
+        <h3 id="headerElement">Header block</h3>
+        <p class="text">Первый абзац</p>
+        <p class="text">Второй абзац</p>
+
+    </div>
+
+
+
+
+    <script>
+
+
+    </script>
+
+
+    <!-- Встраиваемое Событие для 1 кубика  Bad practice-->
+    <script
+        src="metanit_js_part10 - События, Обработка событий.js/Обработка событий, встроенные обработчики- 1.js"></script>
+
+    <!-- Обработка событий через свойство элементов и eventTarget addEventListener-->
+    <script
+        src="metanit_js_part10 - События, Обработка событий.js/Обработка событий, свойства обработчиков - 2.js"></script>
+
+    <!-- Обработка восходящих и нисходящих событий, а также запрет их распространения -->
+    <script
+        src="metanit_js_part10 - События, Обработка событий.js/Распространение событий DOM chain call - 3.js"></script>
+
+    <!-- Обработка событий мыши -->
+    <script src="metanit_js_part10 - События, Обработка событий.js/Обработка событий мыши - 4.js"></script>
+
+    <!-- Обработка событий клавиатуры -->
+    <script src="metanit_js_part10 - События, Обработка событий.js/Обработка событий клавиатуры - 5.js"></script>
+
+    <!-- Новый html element, показывающий время при клике -->
+    <script src="metanit_js_part9 - DOM работа с html/Создание_Своего_Элемента_HTML - 8.js"></script>
+
+</body>
+
+</html>

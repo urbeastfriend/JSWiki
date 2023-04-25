@@ -1,0 +1,1 @@
+// https://metanit.com/web/javascript/5.2.php + смотри codeMu Extra
