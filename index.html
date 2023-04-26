@@ -75,7 +75,69 @@
     <!-- #endregion -->
 </head>
 
+
+
 <body>
+
+    <div class="flexbox-container" style="display: flex;">
+        <div class="form" style="flex: 1;">
+            <form name="search" id="searchForm" autocomplete="off">
+                <input type="text" name="searchText">
+                <input type="submit" name="searchSubmit">
+                <input type="reset" value="Очистить формы">
+                <br>
+                <input type="checkbox" name="searchCheck">
+                <span>Чекбокс</span>
+                <br>
+                <input type="radio" name="searchRadio" checked="true" value="Radio1">
+                <span>Radio1</span>
+                <br>
+                <input type="radio" name="searchRadio" value="Radio2">
+                <span>Radio2</span>
+                <br>
+                <input type="radio" name="searchRadio" value="Radio3">
+                <span>Radio3</span>
+                <br>
+                <input type="radio" name="searchRadio" value="Radio4">
+                <span>Radio4</span>
+            </form>
+        </div>
+
+        <div class="list" style="flex: 2; ">
+
+            <table>
+                <tr>
+                    <td>
+                        <span>Листы</span>
+                        <br>
+
+                        <!-- Чтобы сделать список выпадающим - нужно указать size = 1 -->
+                        <!-- Если указать атрибут multiple, то можно выбрать несколько значений -->
+                        <select name="languages1" id="list1" size="4"
+                            style="vertical-align:top; width: 150px; height: 120px;">
+                            <option value="JS" selected="selected">JavaScript</option>
+                            <option value="Java">Java</option>
+                            <option value="C#">C#</option>
+                            <option value="CPP">CPP</option>
+                        </select>
+
+                    </td>
+                    <td>
+                        <form name="listEdit" autocomplete="off">
+                            <p><input type="text" name="languageText"> <span>Введите текст</span></p>
+                            <p><input type="text" name="languageValue"> <span>Введите значение</span></p>
+                            <p><input type="button" name="addLanguageBtn" value="Добавить язык"></p>
+                            <p><input type="button" name="removeLanguageBtn" value="Удалить язык"></p>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+
     <div class="annotation">
         <p>Кубики с восходящими событиями</p>
     </div>
@@ -141,8 +203,33 @@
     <!-- Обработка событий клавиатуры -->
     <script src="metanit_js_part10 - События, Обработка событий.js/Обработка событий клавиатуры - 5.js"></script>
 
+    <!-- Работа с формами - поиск форм и её элементов -->
+    <script src="metanit_js_part11 - Формы и их элементы/Работа с формами - 1.js"></script>
+
+    <!-- Работа с формами - кнопки, отлавливаем событие click-->
+    <script src="metanit_js_part11 - Формы и их элементы/Кнопки - 2.js"></script>
+
+    <!-- Работа с формами - текстовые поля, onTextChanged, onKeyPressed и тд-->
+    <script src="metanit_js_part11 - Формы и их элементы/Текстовые поля - 3.js"></script>
+
+    <!-- Работа с формами - checkbox и radiobutton -->
+    <script src="metanit_js_part11 - Формы и их элементы/Чекбоксы и переключатели - 4.js"></script>
+
+    <!-- Работа с формами - списки select -->
+    <script src="metanit_js_part11 - Формы и их элементы/Списки, дроплисты select - 5.js"></script>
+
     <!-- Новый html element, показывающий время при клике -->
     <script src="metanit_js_part9 - DOM работа с html/Создание_Своего_Элемента_HTML - 8.js"></script>
+
+
+    <!-- Сериализация, десериализация -->
+    <script src="metanit_js_part12 - JSON/Введение в JSON - 1.js"></script>
+
+    <!-- Куки -->
+    <script src="metanit_js_part13 - Хранение данных (куки,webstorage)/Куки - 1.js"></script>
+
+    <!-- WebStorage -->
+    <script src="metanit_js_part13 - Хранение данных (куки,webstorage)/WebStorage - 2.js"></script>
 
 </body>
 

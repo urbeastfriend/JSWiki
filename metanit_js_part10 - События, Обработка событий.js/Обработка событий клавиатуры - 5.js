@@ -29,7 +29,6 @@ function moveRect(event) {
     let cs = getComputedStyle(rect);
     let left = parseInt(cs.marginLeft);
     let top = parseInt(cs.marginTop);
-    console.log(left, top)
 
     switch (event.key) {
 
