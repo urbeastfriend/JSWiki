@@ -1,0 +1,7 @@
+
+// При экспорте мы можем указать компонент, который будет экспортироваться по умолчанию с помощью оператора default. 
+// Например, определим следующий модуль message.js:
+
+export default function sayHello() {
+    console.log("Hello from sayHello function");
+}
